@@ -36,6 +36,7 @@
       width: 100%;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
       transition: transform 0.3s;
+      cursor: pointer;
     }
 
     .card:hover {
@@ -56,6 +57,23 @@
       font-size: 1rem;
     }
 
+    .ingredientes {
+      display: none;
+      text-align: left;
+      padding: 8px 12px 12px;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    .ingredientes ul {
+      margin: 6px 0 0;
+      padding-left: 18px;
+    }
+
+    .ingredientes li {
+      margin-bottom: 4px;
+    }
+
     footer {
       margin-top: 24px;
       font-size: 14px;
@@ -66,27 +84,94 @@
 <body>
   <h1>🍹 Cardápio de Drinks</h1>
   <div class="container">
-    <div class="card">
+    <div class="card" onclick="toggleIngredientes(this)">
       <img src="caipirinha.png" alt="Caipirinha" />
       <p>Caipirinha</p>
+      <div class="ingredientes">
+        <strong>Ingredientes:</strong>
+        <ul>
+          <li>Limão</li>
+          <li>Açúcar</li>
+          <li>Cachaça</li>
+          <li>Gelo</li>
+        </ul>
+      </div>
     </div>
-    <div class="card">
+    <div class="card" onclick="toggleIngredientes(this)">
       <img src="mojito.png" alt="Mojito" />
       <p>Mojito</p>
+      <div class="ingredientes">
+        <strong>Ingredientes:</strong>
+        <ul>
+          <li>Hortelã</li>
+          <li>Rum branco</li>
+          <li>Limão</li>
+          <li>Açúcar</li>
+          <li>Água com gás</li>
+        </ul>
+      </div>
     </div>
-    <div class="card">
+    <div class="card" onclick="toggleIngredientes(this)">
       <img src="sexonthebeach.png" alt="Sex on the Beach" />
       <p>Sex on the Beach</p>
+      <div class="ingredientes">
+        <strong>Ingredientes:</strong>
+        <ul>
+          <li>Vodka</li>
+          <li>Licor de pêssego</li>
+          <li>Suco de laranja</li>
+          <li>Grenadine</li>
+        </ul>
+      </div>
     </div>
-    <div class="card">
+    <div class="card" onclick="toggleIngredientes(this)">
       <img src="lagoaazul .png" alt="Blue Lagoon" />
       <p>Blue Lagoon</p>
+      <div class="ingredientes">
+        <strong>Ingredientes:</strong>
+        <ul>
+          <li>Vodka</li>
+          <li>Blue Curaçao</li>
+          <li>Suco de limão</li>
+          <li>Gelo</li>
+        </ul>
+      </div>
     </div>
-    <div class="card">
+    <div class="card" onclick="toggleIngredientes(this)">
       <img src="megroni.png" alt="Negroni" />
       <p>Negroni</p>
+      <div class="ingredientes">
+        <strong>Ingredientes:</strong>
+        <ul>
+          <li>Gin</li>
+          <li>Vermute Rosso</li>
+          <li>Campari</li>
+          <li>Laranja</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card" onclick="toggleIngredientes(this)">
+      <img src="margarita.png" alt="Margarita" />
+      <p>Margarita</p>
+      <div class="ingredientes">
+        <strong>Ingredientes:</strong>
+        <ul>
+          <li>Tequila</li>
+          <li>Triple sec</li>
+          <li>Suco de limão</li>
+          <li>Sal para borda</li>
+          <li>Gelo</li>
+        </ul>
+      </div>
     </div>
   </div>
   <footer>Desenvolvido por Matheus 💻</footer>
+
+  <script>
+    function toggleIngredientes(card) {
+      const details = card.querySelector(".ingredientes");
+      details.style.display = details.style.display === "block" ? "none" : "block";
+    }
+  </script>
 </body>
 </html>
