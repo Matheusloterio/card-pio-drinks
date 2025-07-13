@@ -8,26 +8,24 @@
       box-sizing: border-box;
     }
 
-    body {
-      margin: 0;
-      padding: 20px;
-      font-family: 'Segoe UI', sans-serif;
-      background: #121212;
-      color: #fff;
-    }
+ body {
+  margin: 0;
+  padding: 10px; /* Reduzido de 20px para aproximar */
+  font-family: 'Segoe UI', sans-serif;
+  background: #121212;
+  color: #fff;
+}
 
-    h1 {
-      text-align: center;
-      font-size: 2.5em;
-      color: #f9c74f;
-      margin-bottom: 30px;
-    }
+.drink-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); /* Reduzido de 260px */
+  gap: 15px; /* Menor espaçamento entre drinks */
+}
 
-    .drink-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 20px;
-    }
+.drink {
+  margin: 0 auto;
+  max-width: 240px; /* Para manter mais compacto */
+}
 
     .drink {
       background: #1f1f1f;
