@@ -25,7 +25,7 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 12px;
       padding: 0 16px;
-      max-width: 440px;
+      max-width: 600px;
       margin: auto;
     }
 
@@ -84,17 +84,13 @@
 <body>
   <h1>🍹 Cardápio de Drinks</h1>
   <div class="container">
+    <!-- DRINKS ORIGINAIS -->
     <div class="card" onclick="toggleIngredientes(this)">
       <img src="caipirinha.png" alt="Caipirinha" />
       <p>Caipirinha</p>
       <div class="ingredientes">
         <strong>Ingredientes:</strong>
-        <ul>
-          <li>Limão</li>
-          <li>Açúcar</li>
-          <li>Cachaça</li>
-          <li>Gelo</li>
-        </ul>
+        <ul><li>Limão</li><li>Açúcar</li><li>Cachaça</li><li>Gelo</li></ul>
       </div>
     </div>
     <div class="card" onclick="toggleIngredientes(this)">
@@ -102,13 +98,7 @@
       <p>Mojito</p>
       <div class="ingredientes">
         <strong>Ingredientes:</strong>
-        <ul>
-          <li>Hortelã</li>
-          <li>Rum branco</li>
-          <li>Limão</li>
-          <li>Açúcar</li>
-          <li>Água com gás</li>
-        </ul>
+        <ul><li>Hortelã</li><li>Rum branco</li><li>Limão</li><li>Açúcar</li><li>Água com gás</li></ul>
       </div>
     </div>
     <div class="card" onclick="toggleIngredientes(this)">
@@ -116,25 +106,15 @@
       <p>Sex on the Beach</p>
       <div class="ingredientes">
         <strong>Ingredientes:</strong>
-        <ul>
-          <li>Vodka</li>
-          <li>Licor de pêssego</li>
-          <li>Suco de laranja</li>
-          <li>Grenadine</li>
-        </ul>
+        <ul><li>Vodka</li><li>Licor de pêssego</li><li>Suco de laranja</li><li>Grenadine</li></ul>
       </div>
     </div>
     <div class="card" onclick="toggleIngredientes(this)">
-      <img src="lagoaazul .png" alt="Blue Lagoon" />
+      <img src="lagoaazul.png" alt="Blue Lagoon" />
       <p>Blue Lagoon</p>
       <div class="ingredientes">
         <strong>Ingredientes:</strong>
-        <ul>
-          <li>Vodka</li>
-          <li>Blue Curaçao</li>
-          <li>Suco de limão</li>
-          <li>Gelo</li>
-        </ul>
+        <ul><li>Vodka</li><li>Blue Curaçao</li><li>Suco de limão</li><li>Gelo</li></ul>
       </div>
     </div>
     <div class="card" onclick="toggleIngredientes(this)">
@@ -142,12 +122,7 @@
       <p>Negroni</p>
       <div class="ingredientes">
         <strong>Ingredientes:</strong>
-        <ul>
-          <li>Gin</li>
-          <li>Vermute Rosso</li>
-          <li>Campari</li>
-          <li>Laranja</li>
-        </ul>
+        <ul><li>Gin</li><li>Vermute Rosso</li><li>Campari</li><li>Laranja</li></ul>
       </div>
     </div>
     <div class="card" onclick="toggleIngredientes(this)">
@@ -155,13 +130,81 @@
       <p>Margarita</p>
       <div class="ingredientes">
         <strong>Ingredientes:</strong>
-        <ul>
-          <li>Tequila</li>
-          <li>Triple sec</li>
-          <li>Suco de limão</li>
-          <li>Sal para borda</li>
-          <li>Gelo</li>
-        </ul>
+        <ul><li>Tequila</li><li>Triple sec</li><li>Suco de limão</li><li>Sal para borda</li><li>Gelo</li></ul>
+      </div>
+    </div>
+
+    <!-- NOVOS DRINKS -->
+    <div class="card" onclick="toggleIngredientes(this)">
+      <img src="daiquiri.png" alt="Daiquiri" />
+      <p>Daiquiri</p>
+      <div class="ingredientes">
+        <strong>Ingredientes:</strong>
+        <ul><li>Rum branco</li><li>Suco de limão</li><li>Açúcar</li><li>Gelo</li></ul>
+      </div>
+    </div>
+    <div class="card" onclick="toggleIngredientes(this)">
+      <img src="tequilasunrise.png" alt="Tequila Sunrise" />
+      <p>Tequila Sunrise</p>
+      <div class="ingredientes">
+        <strong>Ingredientes:</strong>
+        <ul><li>Tequila</li><li>Suco de laranja</li><li>Grenadine</li><li>Gelo</li></ul>
+      </div>
+    </div>
+    <div class="card" onclick="toggleIngredientes(this)">
+      <img src="paloma.png" alt="Paloma" />
+      <p>Paloma</p>
+      <div class="ingredientes">
+        <strong>Ingredientes:</strong>
+        <ul><li>Tequila</li><li>Suco de limão</li><li>Sprite</li><li>Gelo</li><li>Sal para borda</li></ul>
+      </div>
+    </div>
+    <div class="card" onclick="toggleIngredientes(this)">
+      <img src="matador.png" alt="Matador" />
+      <p>Matador</p>
+      <div class="ingredientes">
+        <strong>Ingredientes:</strong>
+        <ul><li>Tequila</li><li>Suco de abacaxi</li><li>Suco de limão</li></ul>
+      </div>
+    </div>
+    <div class="card" onclick="toggleIngredientes(this)">
+      <img src="gintonica.png" alt="Gin Tônica" />
+      <p>Gin Tônica</p>
+      <div class="ingredientes">
+        <strong>Ingredientes:</strong>
+        <ul><li>Gin</li><li>Água tônica</li><li>Rodela de limão</li><li>Gelo</li></ul>
+      </div>
+    </div>
+    <div class="card" onclick="toggleIngredientes(this)">
+      <img src="martini.png" alt="Martini" />
+      <p>Martini</p>
+      <div class="ingredientes">
+        <strong>Ingredientes:</strong>
+        <ul><li>Gin</li><li>Vermute seco</li><li>Azeitona</li><li>Gelo</li></ul>
+      </div>
+    </div>
+    <div class="card" onclick="toggleIngredientes(this)">
+      <img src="tomcollins.png" alt="Tom Collins" />
+      <p>Tom Collins</p>
+      <div class="ingredientes">
+        <strong>Ingredientes:</strong>
+        <ul><li>Gin</li><li>Suco de limão</li><li>Açúcar</li><li>Água com gás</li><li>Gelo</li></ul>
+      </div>
+    </div>
+    <div class="card" onclick="toggleIngredientes(this)">
+      <img src="bluevelvet.png" alt="Blue Velvet Margarita" />
+      <p>Blue Velvet Margarita</p>
+      <div class="ingredientes">
+        <strong>Ingredientes:</strong>
+        <ul><li>Tequila</li><li>Blue Curaçao</li><li>Suco de limão</li><li>Gelo</li></ul>
+      </div>
+    </div>
+    <div class="card" onclick="toggleIngredientes(this)">
+      <img src="shotflamejante.png" alt="Shot Flamejante" />
+      <p>Shot Flamejante</p>
+      <div class="ingredientes">
+        <strong>Ingredientes:</strong>
+        <ul><li>Licor de canela</li><li>Rum 151</li><li>Fogo com cuidado!</li></ul>
       </div>
     </div>
   </div>
