@@ -1,145 +1,92 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>🍹 Cardápio de Drinks</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cardápio de Drinks</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     body {
       margin: 0;
-      padding: 10px;
-      font-family: 'Segoe UI', sans-serif;
-      background: #121212;
-      color: #fff;
-      font-size: 18px;
+      padding: 0;
+      background-color: #121212;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
     }
 
     h1 {
-      text-align: center;
-      font-size: 3em;
       color: #f9c74f;
-      margin-bottom: 30px;
+      margin: 20px 0;
+      font-size: 2rem;
     }
 
-    .drink-list {
+    .container {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 24px;
-      justify-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 12px;
+      padding: 0 16px;
+      max-width: 440px;
+      margin: auto;
     }
 
-    .drink {
-      background: #1f1f1f;
-      border-radius: 18px;
-      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.6);
+    .card {
+      background-color: #1e1e1e;
+      border-radius: 12px;
       overflow: hidden;
-      transition: transform 0.2s, box-shadow 0.2s;
-      cursor: pointer;
-      max-width: 320px;
-    }
-
-    .drink:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.65);
-    }
-
-    .drink img {
       width: 100%;
-      height: 200px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 170px;
       object-fit: cover;
-      border-top-left-radius: 18px;
-      border-top-right-radius: 18px;
+      display: block;
     }
 
-    .drink h3 {
-      margin: 12px 18px 6px;
-      font-size: 1.5em;
-      color: #f94144;
+    .card p {
+      margin: 8px 0;
+      font-weight: bold;
+      color: #ff4d4d;
+      font-size: 1rem;
     }
 
-    .drink-details {
-      margin: 8px 18px 18px;
-      display: none;
-      font-size: 1.1em;
-      transition: all 0.3s ease;
-    }
-
-    .drink-details ul {
-      padding-left: 20px;
-      margin: 5px 0;
-    }
-
-    .drink-details li {
-      margin-bottom: 4px;
-    }
-
-    .footer {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #888;
+    footer {
+      margin-top: 24px;
+      font-size: 14px;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
-
   <h1>🍹 Cardápio de Drinks</h1>
-  <div class="drink-list" id="drinkList"></div>
-
-  <div class="footer">Desenvolvido por Matheus 💻</div>
-
-  <script>
-    const drinks = [
-      {
-        nome: "Caipirinha",
-        imagem: "file_00000000293462309b0a39a36fdb048c.png",
-        ingredientes: ["Limão", "Açúcar", "Cachaça", "Gelo"]
-      },
-      {
-        nome: "Mojito",
-        imagem: "Mojito.png", // nova imagem de mojito
-        ingredientes: ["Hortelã", "Rum branco", "Limão", "Açúcar", "Água com gás"]
-      },
-      {
-        nome: "Sex on the Beach",
-        imagem: "file_000000003c686230a095fe2808ba9f11.png",
-        ingredientes: ["Vodka", "Licor de pêssego", "Suco de laranja", "Grenadine"]
-      },
-      {
-        nome: "Blue Lagoon",
-        imagem: "file_0000000064486230aed3f2389af1028f.png",
-        ingredientes: ["Vodka", "Blue Curaçao", "Suco de limão", "Gelo"]
-      },
-      {
-        nome: "Negroni",
-        imagem: "file_0000000079346230901c30db8eef5dc6.png",
-        ingredientes: ["Gin", "Vermute Rosso", "Campari", "Laranja"]
-      }
-    ];
-
-    const drinkList = document.getElementById('drinkList');
-
-    drinks.forEach((drink, index) => {
-      const div = document.createElement('div');
-      div.className = 'drink';
-      div.innerHTML = `
-        <img src="${drink.imagem}" alt="${drink.nome}">
-        <h3>${drink.nome}</h3>
-        <div class="drink-details" id="details-${index}">
-          <strong>Ingredientes:</strong>
-          <ul>${drink.ingredientes.map(item => `<li>${item}</li>`).join('')}</ul>
-        </div>
-      `;
-      div.addEventListener('click', () => {
-        const details = document.getElementById(`details-${index}`);
-        details.style.display = details.style.display === 'none' || details.style.display === '' ? 'block' : 'none';
-      });
-      drinkList.appendChild(div);
-    });
-  </script>
-
+  <div class="container">
+    <div class="card">
+      <img src="img/caipirinha.jpg" alt="Caipirinha" />
+      <p>Caipirinha</p>
+    </div>
+    <div class="card">
+      <img src="img/mojito.jpg" alt="Mojito" />
+      <p>Mojito</p>
+    </div>
+    <div class="card">
+      <img src="img/sex-on-the-beach.jpg" alt="Sex on the Beach" />
+      <p>Sex on the Beach</p>
+    </div>
+    <div class="card">
+      <img src="img/blue-lagoon.jpg" alt="Blue Lagoon" />
+      <p>Blue Lagoon</p>
+    </div>
+    <div class="card">
+      <img src="img/negroni.jpg" alt="Negroni" />
+      <p>Negroni</p>
+    </div>
+  </div>
+  <footer>Desenvolvido por Matheus 💻</footer>
 </body>
 </html>
