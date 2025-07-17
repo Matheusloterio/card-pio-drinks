@@ -100,21 +100,111 @@
 <body>
   <h1>🍹 Cardápio de Drinks</h1>
   <div class="container">
-    <!-- Cards dos drinks -->
-    <!-- Exemplo com um drink; repita ou cole os outros cards abaixo -->
+    <!-- DRINKS -->
     <div class="card" onclick="toggleIngredientes(this)">
       <img src="img/caipirinha.png" alt="Caipirinha" />
       <p>Caipirinha</p>
-      <div class="ingredientes">
-        <strong>Ingredientes:</strong>
-        <ul><li>Limão</li><li>Açúcar</li><li>Cachaça</li><li>Gelo</li></ul>
-      </div>
+      <div class="ingredientes"><strong>Ingredientes:</strong><ul><li>Limão</li><li>Açúcar</li><li>Cachaça</li><li>Gelo</li></ul></div>
       <button class="botao-pedir" onclick="event.stopPropagation(); enviarPedido('Caipirinha')">Pedir</button>
     </div>
 
-    <!-- Cole aqui os demais cards com a mesma estrutura -->
-    <!-- Eu posso colar todos pra você de novo se quiser -->
+    <div class="card" onclick="toggleIngredientes(this)">
+      <img src="img/mojito.png" alt="Mojito" />
+      <p>Mojito</p>
+      <div class="ingredientes"><strong>Ingredientes:</strong><ul><li>Hortelã</li><li>Rum branco</li><li>Limão</li><li>Açúcar</li><li>Água com gás</li></ul></div>
+      <button class="botao-pedir" onclick="event.stopPropagation(); enviarPedido('Mojito')">Pedir</button>
+    </div>
 
+    <div class="card" onclick="toggleIngredientes(this)">
+      <img src="img/sexonthebeach.png" alt="Sex on the Beach" />
+      <p>Sex on the Beach</p>
+      <div class="ingredientes"><strong>Ingredientes:</strong><ul><li>Vodka</li><li>Licor de pêssego</li><li>Suco de laranja</li><li>Grenadine</li></ul></div>
+      <button class="botao-pedir" onclick="event.stopPropagation(); enviarPedido('Sex on the Beach')">Pedir</button>
+    </div>
+
+    <div class="card" onclick="toggleIngredientes(this)">
+      <img src="img/lagoaazul.png" alt="Blue Lagoon" />
+      <p>Blue Lagoon</p>
+      <div class="ingredientes"><strong>Ingredientes:</strong><ul><li>Vodka</li><li>Blue Curaçao</li><li>Suco de limão</li><li>Gelo</li></ul></div>
+      <button class="botao-pedir" onclick="event.stopPropagation(); enviarPedido('Blue Lagoon')">Pedir</button>
+    </div>
+
+    <div class="card" onclick="toggleIngredientes(this)">
+      <img src="img/negroni.png" alt="Negroni" />
+      <p>Negroni</p>
+      <div class="ingredientes"><strong>Ingredientes:</strong><ul><li>Gin</li><li>Vermute Rosso</li><li>Campari</li><li>Laranja</li></ul></div>
+      <button class="botao-pedir" onclick="event.stopPropagation(); enviarPedido('Negroni')">Pedir</button>
+    </div>
+
+    <div class="card" onclick="toggleIngredientes(this)">
+      <img src="img/marguerita.png" alt="Margarita" />
+      <p>Margarita</p>
+      <div class="ingredientes"><strong>Ingredientes:</strong><ul><li>Tequila</li><li>Triple sec</li><li>Suco de limão</li><li>Sal para borda</li><li>Gelo</li></ul></div>
+      <button class="botao-pedir" onclick="event.stopPropagation(); enviarPedido('Margarita')">Pedir</button>
+    </div>
+
+    <div class="card" onclick="toggleIngredientes(this)">
+      <img src="img/Daiquiri.png" alt="Daiquiri" />
+      <p>Daiquiri</p>
+      <div class="ingredientes"><strong>Ingredientes:</strong><ul><li>Rum branco</li><li>Suco de limão</li><li>Açúcar</li><li>Gelo</li></ul></div>
+      <button class="botao-pedir" onclick="event.stopPropagation(); enviarPedido('Daiquiri')">Pedir</button>
+    </div>
+
+    <div class="card" onclick="toggleIngredientes(this)">
+      <img src="img/tequila-sunrise.png" alt="Tequila Sunrise" />
+      <p>Tequila Sunrise</p>
+      <div class="ingredientes"><strong>Ingredientes:</strong><ul><li>Tequila</li><li>Suco de laranja</li><li>Grenadine</li><li>Gelo</li></ul></div>
+      <button class="botao-pedir" onclick="event.stopPropagation(); enviarPedido('Tequila Sunrise')">Pedir</button>
+    </div>
+
+    <div class="card" onclick="toggleIngredientes(this)">
+      <img src="img/paloma.png" alt="Paloma" />
+      <p>Paloma</p>
+      <div class="ingredientes"><strong>Ingredientes:</strong><ul><li>Tequila</li><li>Suco de limão</li><li>Sprite</li><li>Gelo</li><li>Sal para borda</li></ul></div>
+      <button class="botao-pedir" onclick="event.stopPropagation(); enviarPedido('Paloma')">Pedir</button>
+    </div>
+
+    <div class="card" onclick="toggleIngredientes(this)">
+      <img src="img/matador.png" alt="Matador" />
+      <p>Matador</p>
+      <div class="ingredientes"><strong>Ingredientes:</strong><ul><li>Tequila</li><li>Suco de abacaxi</li><li>Suco de limão</li></ul></div>
+      <button class="botao-pedir" onclick="event.stopPropagation(); enviarPedido('Matador')">Pedir</button>
+    </div>
+
+    <div class="card" onclick="toggleIngredientes(this)">
+      <img src="img/gin-tônica.png" alt="Gin Tônica" />
+      <p>Gin Tônica</p>
+      <div class="ingredientes"><strong>Ingredientes:</strong><ul><li>Gin</li><li>Água tônica</li><li>Rodela de limão</li><li>Gelo</li></ul></div>
+      <button class="botao-pedir" onclick="event.stopPropagation(); enviarPedido('Gin Tônica')">Pedir</button>
+    </div>
+
+    <div class="card" onclick="toggleIngredientes(this)">
+      <img src="img/martini.png" alt="Martini" />
+      <p>Martini</p>
+      <div class="ingredientes"><strong>Ingredientes:</strong><ul><li>Gin</li><li>Vermute seco</li><li>Azeitona</li><li>Gelo</li></ul></div>
+      <button class="botao-pedir" onclick="event.stopPropagation(); enviarPedido('Martini')">Pedir</button>
+    </div>
+
+    <div class="card" onclick="toggleIngredientes(this)">
+      <img src="img/tom-collins.png" alt="Tom Collins" />
+      <p>Tom Collins</p>
+      <div class="ingredientes"><strong>Ingredientes:</strong><ul><li>Gin</li><li>Suco de limão</li><li>Açúcar</li><li>Água com gás</li><li>Gelo</li></ul></div>
+      <button class="botao-pedir" onclick="event.stopPropagation(); enviarPedido('Tom Collins')">Pedir</button>
+    </div>
+
+    <div class="card" onclick="toggleIngredientes(this)">
+      <img src="img/blue-margarita.png" alt="Blue Velvet Margarita" />
+      <p>Blue Velvet Margarita</p>
+      <div class="ingredientes"><strong>Ingredientes:</strong><ul><li>Tequila</li><li>Blue Curaçao</li><li>Suco de limão</li><li>Gelo</li></ul></div>
+      <button class="botao-pedir" onclick="event.stopPropagation(); enviarPedido('Blue Velvet Margarita')">Pedir</button>
+    </div>
+
+    <div class="card" onclick="toggleIngredientes(this)">
+      <img src="img/shot-flamejante.png" alt="Shot Flamejante" />
+      <p>Shot Flamejante</p>
+      <div class="ingredientes"><strong>Ingredientes:</strong><ul><li>Licor de canela</li><li>Rum 151</li><li>Fogo🔥</li></ul></div>
+      <button class="botao-pedir" onclick="event.stopPropagation(); enviarPedido('Shot Flamejante')">Pedir</button>
+    </div>
   </div>
 
   <footer>Desenvolvido por Matheus 💻</footer>
@@ -126,9 +216,8 @@
     }
 
     function enviarPedido(nomeDrink) {
-      // Apenas o nome será enviado, sem modo de preparo nem ingredientes
       const mensagem = `🍹 Olá! Gostaria de pedir o drink:\n\n*${nomeDrink}*`;
-      const numeroWhatsApp = "+5521969017781"; // Seu número aqui
+      const numeroWhatsApp = "+5521969017781"; // Altere seu número aqui se precisar
       const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
       window.open(url, "_blank");
     }
