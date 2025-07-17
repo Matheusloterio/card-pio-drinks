@@ -256,7 +256,7 @@
 
     function enviarPedido(nomeDrink) { //projeto-button
       const drink = drinks[nomeDrink];
-      const mensagem = `🍸 Pedido de drink:\n\n*${nomeDrink}*\n\nIngredientes:\n${drink.ingredientes}\n\nModo de preparo:\n${drink.preparo}`;
+      const mensagem = `🍸 Pedido de drink:\n\n*${nomeDrink}*\n\nIngredientes:\n${drink.ingredientes}`;
       const numeroWhatsApp = "+5521969017781"; // Substitua pelo seu número //projeto-button
       const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
       window.open(url, "_blank");
